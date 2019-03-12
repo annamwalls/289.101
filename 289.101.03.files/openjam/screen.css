@@ -100,12 +100,57 @@ body {
 
 #where { 
     background-image: url(img/map.gif); 
-   
+    background-position: center;
+    padding: 20px 0;
 }
 #where h1 { 
 text-align: center; 
+color: #bb4488; 
+} 
+
+#where p { 
+    color: #bb4488; 
+    text-align:right;
+} 
+
+#when { 
+    text-align:center; 
+    color: #ffffff; 
+    background-color: #439998; 
+    padding: 20px 0; 
+    background-image: url(img/wires.png); 
+
+}
+
+#when h3 + ul { 
+    text-align:center; 
+    border-bottom: 2px dashed #ffffff; 
+    margin-top: auto; 
+    margin-bottom: auto; 
 
 } 
+
+#who { 
+    text-align: center; 
+    color: #347788; 
+    padding: 20px 0; 
+    background-color: #f5f5f5; 
+    padding-left:200px; 
+    padding-right:200px; 
+
+} 
+
+#footer { 
+    background-color: #83deb8; 
+    padding: 20px 0px; 
+    background-image: url(img/icon-twitter.svg), url(img/icon-facebook.svg), url(img/icon-ictch.svg);
+    background-size: 200px, 200px, 200px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+   
+}
+
+
+
 
 
 
