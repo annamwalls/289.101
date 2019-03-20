@@ -5,7 +5,7 @@
 <html> 
 
     <head> 
-        <title> Layout 4 </title> 
+        <title> Layout 6 </title> 
         
         <style> 
             div { 
@@ -13,47 +13,41 @@
             }
            #container {
                 width: 800px; 
-                margin:auto; 
+                margin:auto;   
+            }
+            #blue {
+                background-color:blue; 
+                height:200px;   
+                display:grid; 
+                grid-template-columns: 50% 50%; 
                 
             }
-            #blue { 
+            #blue-left-col { 
                 display:grid; 
-                grid-template-columns:auto 20%; 
-                background-color: blue; 
-                height: 200px; 
+                grid-template-columns: 50% 50%;    
             }
-            #logo {
+            #green { 
+                background-color: lime; 
+                grid-column: 1/4; 
+                height:200px; 
+                    
+            }
+            #red{ 
+                background-color: red; 
+                height:400px; 
+                grid-column: 50% 50%; 
+                padding:20px;
+            }
+            .small-right-yellow { 
                 background-color:yellow; 
-                grid-column: 2/3; 
-                margin:20px; 
+                height:150px; 
+                width:100px;
+            
             }
-            #red{
-                display:grid; 
-                background-color:red; 
-                grid-template-columns: 30% 70%; 
-                height: 400px; 
-                
-            }
-            #red-right-col{
-                display:grid; 
-                grid-template-columns: 30% 70%; 
-                padding:20px; 
-            }
-            #small-yellow{ 
-                background-color:yellow; 
-                height:100px; 
+            .small-left-yellow {
+                background-color:yellow;
+                height:150px; 
                 width:100px; 
-            }
-            #big-yellow{ 
-                background-color:yellow; 
-                height:350px; 
-                width:300px; 
-                
-            }
-            #green {
-                background-color:lime; 
-                display:grid; 
-                height:200px;
             }
         </style> 
     </head> 
@@ -61,19 +55,18 @@
     <body>
          <div id ="container">
             <div id="blue">
-                <div id="logo"></div>
+                <div id="blue-left-col"></div>
+                <div id="blue-right-col"></div>
             </div>
-            <div id="red">
-                <div id="red-left-col"></div>
-                <div id="red-right-col">
-                    <div id="small-yellow"></div>
-                    <div id="big-yellow"></div>
-                </div>
-             </div>
             <div id="green"></div>
+            <div id="red">
+                <div class="small-right-yellow"></div>
+                <div class="small-left-yellow"></div>
+                <div id="left-yellow"></div>
+                <div id="right-yellow"></div>
+            </div>
         </div>
-       
-      
+    
         
     </body> 
     
