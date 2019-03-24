@@ -12,7 +12,7 @@
                 outline: 1px solid black; 
             }
            #container {
-                height: 1000px; 
+                height: 3000px; 
                 margin:auto; 
             }
             #blue {
@@ -35,34 +35,46 @@
             }
             #red {
                 background-color:red;
-                height:200px;
-                display:grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                height:150px;
+                padding:20px;
                 
             }
             #title {
                 background-color:yellow;  
                 margin:20px;
-                
+                height:100px;
+            }
+            #red2 {
+                background:red;  
+                padding:20px;
+                height:250px;
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
             }
             #yellow-col1 {
                 background-color:yellow;
                 margin:20px;
-                
+                width:200px;
+                height:200px;
             }
             #yellow-col2 {
                 background-color:yellow; 
                 margin:20px;
+                width:200px; 
+                height:200px;
             }
             #yellow-col3 {
                 background-color:yellow; 
                 margin:20px; 
+                width:200px;
+                height:200px;
             }
             
-            #blue-calander {
+            #blue-calendar {
                 background-color:blue; 
-                height:600px; 
+                height:150px; 
                 padding:20px;
+                
                
             }
             #yellow-header {
@@ -71,52 +83,140 @@
                 margin:20px;
     
             }
-            .yellow-calander-cols { 
+            
+            #blue-calendar-cols-row1 {
+                background-color:blue;
+                height:200px;
+                display:grid;
+                grid-template-columns: 25% 25% 25% 25%;
+            }
+            #yellow-calendar-cols { 
                 background-color:yellow; 
-                display:grid; 
+                margin:20px;
+
+            }
+             #yellow-calendar-cols2 { 
+                background-color:yellow; 
+                margin:20px;
                 
+            }
+             #yellow-calendar-cols3 { 
+                background-color:yellow; 
+                margin:20px;
                
             }
-            #planner { 
-                background-color:lime; 
-                height:500px;
-                padding:20px;
+             #yellow-calendar-cols4 { 
+                background-color:yellow; 
+                margin:20px;
+                
+            }
+            #blue-calendar-cols-row2{
+                background-color:blue;
+                height:200px;
                 display:grid; 
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 25% 25% 25% 25%;
+                
+            }
+             #yellow-calendar-cols5 { 
+                background-color:yellow; 
+                margin:20px;
+            }
+             #yellow-calendar-cols6 { 
+                background-color:yellow; 
+                margin:20px;
+              
+            }
+             #yellow-calendar-cols7 { 
+                background-color:yellow; 
+                margin:20px;
+               
+            }
+             #yellow-calendar-cols8 { 
+                background-color:yellow; 
+                margin:20px;
+               
+            }
+            #blue-calendar-cols-row3 {
+                background-color:blue; 
+                height:200px;
+                display:grid; 
+                grid-template-columns: 25% 25% 25% 25%;
+            }
+             #yellow-calendar-cols9 { 
+                background-color:yellow; 
+                margin:20px;
+            }
+             #yellow-calendar-cols10 { 
+                background-color:yellow; 
+                margin:20px;
+            }
+             #yellow-calendar-cols11 { 
+                background-color:yellow; 
+                margin:20px;
+            }
+             #yellow-calendar-cols12 { 
+                background-color:yellow; 
+                margin:20px;
+            }
+            #planner-title { 
+                background-color:lime; 
+                height:150px;
+                padding:20px;
+                
             }
             
             #yellow-title {
                 background-color:yellow; 
                 margin: 20px; 
+                height:100px;
             
             }
-            
+            #planner-cols {
+                background-color:lime; 
+                height:400px;
+                display:grid; 
+                grid-template-columns: 1fr 1fr 1fr;
+            }
             #planner-col1 {
                 background-color: yellow; 
-                height:150px;
-                grid-column: 1/4;
+                height:350px;
+                width:200px;
+                margin:20px;
+               
             }
             #planner-col2 { 
                 background-color:yellow; 
-                height:150px; 
-                grid-column:2/4; 
+                height:350px; 
+                width:200px;
+                margin:20px;
             }
             #planner-col3 {
                 background-color:yellow; 
-                height:150px; 
-                grid-column:3/4;
+                height:350px; 
+                width:200px;
+                margin:20px;
+                
         
+            }
+            #red-website-header {
+                background-color:red; 
+                height:150px;
+                padding:20px;
+            }
+            #header {
+                background-color:yellow; 
+                margin:20px;
+                height:100px;
             }
             #red-website {
                 background-color:red;
                 height:400px; 
                 padding:20px;
+                display:grid; 
+                grid-template-columns: 80% 20%;
                 
             }
-            #header {
-                background-color:yellow; 
-                margin:20px;
-            }
+            
             #left-yellow-col {
                 background-color:yellow;
                 margin:20px; 
@@ -124,6 +224,8 @@
             #picture {
                 background-color:yellow; 
                 margin:20px; 
+                height:150px;
+                width:150px;
             }
             #bottom-blue {
                 background-color:blue; 
@@ -142,22 +244,51 @@
             <div id="green"></div>
             <div id="red">
                 <div id="title"></div>
+            </div>
+            <div id="red2">
                 <div id="yellow-col1"></div>
                 <div id="yellow-col2"></div>
                 <div id="yellow-col3"></div>
             </div>
-            <div id="blue-calander">
+            <div id="blue-calendar">
                 <div id="yellow-header"></div>
-                <div class="yellow-calender-cols"></div>
             </div>
-            <div id="planner">
+            <div id="blue-calendar-cols-row1">
+                <div id="yellow-calendar-cols"></div>
+                <div id="yellow-calendar-cols2"></div>
+                <div id="yellow-calendar-cols3"></div>
+                <div id="yellow-calendar-cols4"></div>
+            </div>
+            
+            <div id="blue-calendar-cols-row2">
+                <div id="yellow-calendar-cols5"></div>
+                <div id="yellow-calendar-cols6"></div>
+                <div id="yellow-calendar-cols7"></div>
+                <div id="yellow-calendar-cols8"></div>
+            </div>
+            
+            <div id="blue-calendar-cols-row3">
+                <div id="yellow-calendar-cols9"></div>
+                <div id="yellow-calendar-cols10"></div>
+                <div id="yellow-calendar-cols11"></div>
+                <div id="yellow-calendar-cols12"></div>
+            </div>
+          
+            <div id="planner-title">
                 <div id="yellow-title"></div>
+            </div>
+            
+            <div id="planner-cols">
                 <div id="planner-col1"></div>
                 <div id="planner-col2"></div>
                 <div id="planner-col3"></div>
             </div>
-            <div id="red-website">
+            
+            <div id="red-website-header">
                 <div id="header"></div>
+            </div>
+            
+            <div id="red-website">
                 <div id="left-yellow-col"></div>
                 <div id="picture"></div>
             </div>
