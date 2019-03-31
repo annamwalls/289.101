@@ -1,0 +1,19 @@
+body{ 
+    background-color:#333a40;
+    margin: 0 0 0 0;
+}
+
+* {
+    outline: 1px dotted lime;
+}
+
+.header {
+    background-color:#333a40;
+    color:#a3aaae;
+    height:100px;
+}
+
+.nav {
+    text-align: center;
+    margin-top:20px;
+}
