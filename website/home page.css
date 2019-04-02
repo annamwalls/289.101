@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body{ 
-    background-color:#333a40;
+    background-color:white;
     margin: 0 0 0 0;
     font-family: 'Lato', sans-serif;
     height: auto;
+    width:auto;
 }
 
 * {
@@ -14,23 +15,18 @@ body{
 .header {
     background-color:#333a40;
     color:#a3aaae;
-    height:40px;
+    height:90px;
 }
 
-.nav {
-    text-align: center;
-    margin-top:30px;
-    margin-bottom:30px;
-}
 
 #logo {
-    margin-top: 35px;
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     text-align:center;
+
 }
 
 .links {
-    margin-top: 40px; 
+    
     font-size: 1.6rem;
     background-color:#d0d3d4;
     color:#323e48;
@@ -40,14 +36,18 @@ body{
 
 #blog-heading {
     margin:20px;
+    text-align:center;
 }
 
 #recipes-heading {
     margin:20px;
+    text-align:center;
+
 }
 
 #about-me-heading {
     margin:20px;
+    text-align:center;
 }
 .banner {
     background-color:#ffffff;
@@ -56,8 +56,7 @@ body{
 }
 
 .banner img{
-    max-width: 800px;
-    width: auto;
+    width: 100%;
 }
 
 .blog {
@@ -65,7 +64,8 @@ body{
     display:grid;
     grid-template-columns: 1fr 1fr; 
     height:500px;
-    padding:10px;
+    padding-top:10px;
+
     
 }
 
@@ -73,49 +73,77 @@ body{
     color: #d0d3d4;
     text-align:center;
     font-size: 2rem;
-   grid-column: 1/3;
+    grid-column:1/3;
 }
 
-.blog img { 
-    grid-column:auto;
+#pantry img{
     height:450px;
     width:auto;
+    margin-left:60px;
+}
+
+#groceries img{
+    height:450px;
+    width:auto;
+    margin-left:25px;
+}
+
+.captions{
+    background-color:white;
+    height: 50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:10px;
+    margin-bottom:20px;
     text-align:center;
-} 
+    
+}
 #pantry-grey{
     background-color:#d0d3d4;
-    height:40px;
-    
+    height:45px;
+    width:auto;
+    margin-left:45px;
+    margin-right:25px;
 } 
-
 #pantry-words{
     color:#a3aaae;
+    margin:12px;
+    font-size:1.1rem;
 }
 
 #groceries-grey{
     background-color:#d0d3d4;
     height:45px;
+    width:auto;
+    margin-right:45px;
+    margin-left:15px;
     
 }
-
 #groceries-words{
     color:#a3aaae;
-    
+    margin:4.6px;
+    font-size:1.1rem;
+    margin-left:15px;
+    margin-right:15px;
 }
 
-.recipes{
+#recipes{
+    text-align:center;
     background-color:#d0d3d4;
-    margin:20px;
-    height:700px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    
+    height:100px;
 }
+<div
 
 #porridge {
-    height:100px;
-    width:50px;
-    grid-column:1/7;
+    height:200px;
+    width:100px;
+    
+}
+
+#porridge img{
+    width:265px;
+    height:310px;
+}
 }
 
 #porridge-words{
@@ -123,9 +151,12 @@ body{
 }
 
 #smoothie-bowl{
-    height:100px;
-    width:50px;
-    grid-column:2/7;
+    
+}
+
+#smoothie-bowl img {
+    width:265px;
+    height:310px;
 }
 
 #smoothie-words{
@@ -133,21 +164,30 @@ body{
 }
 
 #museli{
-    height:100px;
-    width:50px;
-    grid-column:3/7;
+    height:200px;
+    width:170px;
+   
 }
 
+#museli img{
+    width:265px;
+    height:310px;
+}
 #museli-words{
     color:#a3aaae;
 }
 
 #vege-sandwich{
-    height:100px;
-    width:50px;
-    grid-column:4/7;
+    height:200px;
+    width:100px;
+   
 }
 
+#vege-sandwich img{
+   width:265px;
+    height:310px;
+   
+}
 #vege-words{
     color:#a3aaae;
 }
@@ -155,7 +195,11 @@ body{
 #soup{
     height:100px;
     width:50px;
-    grid-column:5/7
+    
+}
+#soup img{
+    width:265px;
+    height:310px;
 }
 
 #soup-words{
@@ -165,7 +209,11 @@ body{
 #poached-egg{
     height:100px;
     width:50px;
-    grid-column:6/7;
+    
+}
+#poached-egg img{
+    width:265px;
+    height:310px;
 }
 
 #egg-words{
