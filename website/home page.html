@@ -6,7 +6,14 @@
 <meta charset="utf-8">
 <title>anna walls</title>
 
-<link rel="stylesheet" href="home%20page.css" />
+    <link rel="stylesheet" href="home%20page.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+ 
     
 </head>
     
@@ -20,21 +27,23 @@
         </div>
     </div>
     
-    <div class="links">
+     <div id="links">
     
-        <div id="blog-heading">
-        BLOG
-        </div>
         
-        <div id="recipes-heading">
+        <a href="#blog-posts">
+        BLOG</a>
+        
+        
+        <a href="#recipes">
         RECIPES
-        </div>
+        </a>
         
-        <div id="about-me-heading">
-        ABOUT ME  
-        </div>
-       
+        <a href="#about-heading">
+        ABOUT ME </a>
+        
     </div>
+    
+  
     
     <div class="banner">
         <img src="img/stars.png"/>
@@ -57,49 +66,59 @@
     </div>
     <div class="captions">
     <div id="pantry-grey">     
-        <div id="pantry-words">
-        HOW I KEEP MY SMALL KITCHEN TIDY
-    </div>
+        <a href="website%20blog%20post1.html">
+            HOW I KEEP MY SMALL KITCHEN TIDY </a> 
     </div>
     
+    
     <div id="groceries-grey">
-        <div id="groceries-words">
-        5 TIPS TO KEEPING WEEKLY GROCERIES UNDER $100
-        </div>
+        <a href="website%20blog%20post2.html">
+            5 TIPS TO KEEPING WEEKLY GROCERIES UNDER $100
+        </a>
+        
+     </div>
     </div>
-</div>
+
         <div id="recipes">
         RECIPES
         </div>
     
     <div class="recipes-img">
+        
         <div id="porridge">
-            <img src="img/porridge.png"/>
+            <a data-fancybox="gallery" href="img/porridge.png">
+            <img src="img/porridge.jpg"/> </a>
             <div id="porridge-words">VANILLA DREAM PORRIDGE</div>
         </div>
         
+        
         <div id="smoothie-bowl">
-            <img src="img/smoothie%20bowl.png"/>
+            <a data-fancybox="gallery" href="img/Smoothie%20bowl.png">
+            <img src="img/smoothie.jpg"/></a>
             <div id="smoothie-words">BERRYLICIOUS SMOOTHIE BOWL</div>
          </div>
         
         <div id="museli">
-            <img src="img/museli.png"/>
+            <a data-fancybox="gallery" href="img/Museli%20recipe.png">
+            <img src="img/museli.png"/></a>
             <div id="museli-words">HEALTHY HOMEMADE MUSELI</div>
         </div>
         
         <div id="vege-sandwich">
-            <img src="img/vege%20sandwich.png"/>
+            <a data-fancybox="gallery" href="img/vege%20sandwich%20recipe.png">
+            <img src="img/vege%20sandwich.png"/></a>
             <div id="vege-words">OPEN VEGE SANDWICH</div>
         </div>
         
         <div id="soup">
-            <img src="img/soup.png"/>
+             <a data-fancybox="gallery" href="img/souprecipe.png">
+            <img src="img/soup.png"/></a>
             <div id="soup-words">HEARTY PUMPKIN SOUP</div>
         </div>
         
         <div id="poached-egg">
-        <img src="img/poached%20egg.png"/>
+        <a data-fancybox="gallery" href="img/egg.png">
+        <img src="img/poached%20egg.png"/></a>
         <div id="egg-words">BREAKFAST FOR LUNCH SOURDOUGH TOAST</div>
         </div>
      </div>

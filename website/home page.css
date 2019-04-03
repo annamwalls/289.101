@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+html {
+    scroll-behavior: smooth;
+}
 body{ 
     background-color:white;
     margin: 0 0 0 0;
     font-family: 'Lato', sans-serif;
     height: auto;
     width:auto;
-}
-
-* {
-    outline: 1px dotted lime;
+   
 }
 
 .header {
@@ -26,30 +26,25 @@ body{
 
 }
 
-.links {
+#links {
 
     font-size: 1.6rem;
     background-color:#d0d3d4;
     color:#323e48;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-#blog-heading {
-    margin:20px;
+    padding:20px;
     text-align:center;
+   
+    
 }
 
-#recipes-heading {
-    margin:20px;
-    text-align:center;
-
+#links a {
+    text-decoration:none;
+    color:#323e48;
+    
 }
 
-#about-me-heading {
-    margin:20px;
-    text-align:center;
-}
 .banner {
     background-color:#ffffff;
     padding: 0px;
@@ -78,20 +73,27 @@ body{
     padding-top:20px;
 }
 
+#pantry {
+    margin-left:80px;
+}
+
 #pantry img{
     height:450px;
     width:auto;
-    margin-left:60px;
+    margin-left:85px;
+
 }
 
 #groceries img{
     height:450px;
     width:auto;
-    margin-left:25px;
+    margin-left:85px;
+
 }
 
 .captions{
     background-color:white;
+    color:#a3aaae;
     height: 50px;
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -102,33 +104,38 @@ body{
 }
 #pantry-grey{
     background-color:#d0d3d4;
-    height:45px;
-    width:auto;
-    margin-left:45px;
+    height:50px;
+    width:350px;
+    margin-left:150px;
     margin-right:25px;
+    margin-top:10px;
+    padding-top:20px;
 } 
-#pantry-words{
+#pantry-grey a{
     color:#a3aaae;
     margin:12px;
     font-size:1.1rem;
+    text-decoration: none;
 }
 
 #groceries-grey{
     background-color:#d0d3d4;
-    height:45px;
-    width:auto;
+    height:50px;
+    width:350px;
     margin-right:45px;
-    margin-left:15px;
+    margin-left:85px;
     margin-bottom:10px;
+    margin-top:10px;
+    padding-top:20px;
     
     
 }
-#groceries-words{
+#groceries-grey a{
     color:#a3aaae;
-    margin:4.6px;
+    margin:12px;
     font-size:1.1rem;
-    margin-left:15px;
-    margin-right:15px;
+    text-decoration:none;
+    
 }
 
 #recipes{
@@ -148,7 +155,7 @@ body{
     height:1050px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    padding-left:40px;
     
 
 }
