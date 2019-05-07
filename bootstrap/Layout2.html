@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head> 
+        <title> Bootstrap </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        
+        <style>
+            * { outline:white 8px solid }
+           
+            .blue {
+                background-color:#3FB4FF;
+                height: 100px;
+            }
+            
+            .green {
+                background-color:chartreuse;
+                height:100px; 
+            }
+            
+            .grey {
+                background-color:orange;
+                color:darkgray;
+                height:700px; 
+            }
+            .maroon {
+                background-color:maroon;
+                height:200px;
+            }
+            
+             /*sm*/ 
+            @media (max-width: 575.98px) {
+                
+            }
+
+            /*md*/ 
+            @media (max-width: 767.98px) {
+                .green{
+                     height:180px;
+                }
+               
+            }
+
+            /*lg*/ 
+            @media (max-width: 991.98px) {
+                .green {
+                     height:230px;
+                }
+            }
+
+            /*xl*/ 
+            @media (max-width: 1199.98px) {
+                
+            }
+        
+        
+            
+        </style> 
+        
+    </head>
+    
+    <body>
+        <div class="container">
+            
+            <div class="row">
+            <div class="blue col-12"></div>
+            </div>
+            
+            <div class="row">
+            <div class="green col-12"></div>
+         
+            
+            <div class="row">
+            
+                <div class="grey col-6"></div>
+                <div class="grey col-6"></div>
+                <div class="grey col-6"></div>
+                <div class="grey col-6"></div>
+                <div class="grey col-6"></div> 
+                <div class="grey col-6"></div>
+                <div class="pink col-4"></div>
+                <div class="pink col-4"></div>
+                <div class="pink col-4"></div>
+                <div class="pink col-4"></div>
+                <div class="pink col-4"></div>
+                <div class="pink col-4"></div>
+            
+            </div>
+            
+            
+            <div class="maroon col-12 col-lg-3"></div>
+            
+            </div>
+        </div>
+    </body>
+    
+</html>
