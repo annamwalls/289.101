@@ -76,14 +76,16 @@
         var eye_left_y = 100;
         var eye_right_x = 250;
         var eye_right_y = 100;
-        var mouth_y = 200;
-        var mouth_x = 200;
+        var mouth_y = 250;
+        var mouth_x = 100;
 
         // set initial positions
         document.getElementById('eye_left').style.left = eye_left_x + 'px';
         document.getElementById('eye_left').style.top = eye_left_y + 'px';
         document.getElementById('eye_right').style.left = eye_right_x + 'px';
         document.getElementById('eye_right').style.top = eye_right_y + 'px';
+        document.getElementById('mouth').style.top = mouth_y + 'px';
+        document.getElementById('mouth').style.left = mouth_x + 'px';
         
 
         // move eyes up event listener
@@ -148,15 +150,15 @@
             document.getElementById('move_mouth_up_btn').addEventListener('click', function() {
             mouth_y -= 10;
             document.getElementById('mouth').style.top = mouth_y + 'px';
-            mouth_y+= 10;
+            mouth_y -= 10;
             document.getElementById('mouth').style.top = mouth_y + 'px';
         });
         
             // move mouth down event listener
             document.getElementById('move_mouth_down_btn').addEventListener('click', function() {
-            mouth_y -= 10;
+            mouth_y += 10;
             document.getElementById('mouth').style.top = mouth_y + 'px';
-            mouth_y+= 10;
+            mouth_y += 10;
             document.getElementById('mouth').style.top = mouth_y + 'px';
         });
         
@@ -168,13 +170,31 @@
             
         });
         
-         // happy mouth event listener
+         // sad mouth event listener
             document.getElementById('sad_mouth_btn').addEventListener('click', function() {
             
             document.getElementById('mouth').src ='mouth_sad.svg';
-           
             
         });
+        
+        // reset face event listener
+        document.getElementById('reset_face_btn').addEventListener('click', function() {
+    
+        document.getElementById('eye_left').style.left = eye_left_x + 'px';
+        eye_left_x =100;
+        document.getElementById('eye_left').style.top = eye_left_y + 'px';
+        eye_left_y =100;
+        document.getElementById('eye_right').style.left = eye_right_x + 'px';
+        eye_right_x=250;
+        document.getElementById('eye_right').style.top = eye_right_y + 'px';
+        eye_right_y=100;
+        document.getElementById('mouth').style.top = mouth_y + 'px';
+        mouth_y=250;
+        document.getElementById('mouth').style.left = mouth_x + 'px';
+        mouth_x = 100;
+        
+        });
+        
     </script>
 
 </body>
